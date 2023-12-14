@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+	min-height: 100vh;
+	background:rgb(0, 162, 255)
+}
+
+.card__basic, .card__pro, .card__primium {
+     border-radius:8px;
+     padding:5px;
+     background-color: white;
+     height: 80vh;
+}
+
+
+.card__basic, .card__primium, .card__pro {
+	width:350px;
+	box-shadow:rgb(70, 69, 69);
+	text-align: center;
+    overflow: hidden;
+    
+}
+
+.card__FREE, .card__PRO {
+	margin: 20px;
+}
+
+.card__title {
+    color: rgb(108, 132, 136);
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__list {
+    color: rgb(22, 44, 48);
+	display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.card__list {
+	padding: 15px;
+    border-top: 1px solid #EEE;
+	list-style: none;
+}
+
+.price {
+	background-color:white;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.btn {
+	margin: 1rem;
+	padding: .5rem 1.5rem;
+	border: 0;
+	border-radius: 8px;
+	background:rgb(0, 153, 255);
+	color: #FFF;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.4s ease-in;
+}
+
+button:hover{
+	background: #3AB0CC;
+}
+
+@media (min-width: 875px) {
+	.card__FREE, .card__PRO {
+		margin: 1rem 0;
+		position: relative;
+		top: 20px;
+	}
+}
